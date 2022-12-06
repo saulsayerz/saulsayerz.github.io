@@ -1,6 +1,7 @@
 import * as React from 'react';
 import Navbar from './Navbar.js'
 import Biography from './Biography'
+import Body from './Body'
 import { BottomNavigation } from '@mui/material';
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
     <div className="App">
       <Navbar />
       <Biography />
+      {/* <Body /> */}
     </div>
   );
 }

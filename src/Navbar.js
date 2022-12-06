@@ -7,11 +7,11 @@ import Typography from '@mui/material/Typography';
 import Menu from '@mui/material/Menu';
 import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
-import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
+import Link from '@mui/material/Link';
 
-const sections = ['Education', 'Publications', 'Featured Works', 'Projects', 'News'];
+const sections = ['Education', 'Publications', 'Projects', 'News'];
 
 function Navbar() {
     const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -24,9 +24,8 @@ function Navbar() {
       setAnchorElNav(null);
     };
   
-  
     return (
-      <AppBar position="static">
+      <AppBar position="sticky">
         <Container maxWidth="xl">
           <Toolbar disableGutters>
             <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
@@ -105,13 +104,12 @@ function Navbar() {
             </Typography>
             <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
               {sections.map((page) => (
-                <Button
-                  key={page}
-                  onClick={handleCloseNavMenu}
-                  sx={{ my: 2, color: 'white', display: 'block' }}
-                >
-                  {page}
-                </Button>
+                    <Link
+                    href = {"/#"+page}
+                    sx ={{color:'white', mr: 6}}
+                  >
+                    {page}
+                  </Link>
               ))}
             </Box>
           </Toolbar>
