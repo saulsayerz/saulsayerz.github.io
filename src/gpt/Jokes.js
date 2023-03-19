@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import Prompt from './Prompt';
-import './animation.css'
 
 function Jokes() {
   const [showPrompt, setShowPrompt] = useState(false);
@@ -8,12 +7,10 @@ function Jokes() {
 
   const handleYesClick = () => {
     setShowPrompt(true);
-    // perform other actions here
   };
 
   const handleNoClick = () => {
     setShowPrompt(true);
-    // perform other actions here
   };
 
   const containerStyle = {
