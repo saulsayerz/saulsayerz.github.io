@@ -11,7 +11,7 @@ import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 import Link from '@mui/material/Link';
 
-const sections = ['Education', 'Publications', 'Projects', 'News'];
+const sections = ['Education', 'Projects', 'Skills', 'Contact'];
 
 function Navbar() {
     const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -105,7 +105,7 @@ function Navbar() {
             <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
               {sections.map((page) => (
                     <Link
-                    href = {"/#"+page}
+                    href = {page === "Projects" ? "/sayerz-nimfinder" : "/#"+page}
                     sx ={{color:'white', mr: 6}}
                   >
                     {page}
