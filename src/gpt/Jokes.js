@@ -22,14 +22,6 @@ function Jokes() {
     alignItems: 'center',
   };
 
-  const promptStyle = {
-    entering: { opacity: 0 },
-    entered: { opacity: 1 },
-    exiting: { opacity: 1 },
-    exited: { opacity: 0 },
-    transition: 'opacity 300ms ease-in-out'
-  };
-
   return (
     <div style={containerStyle}>
         {!showPrompt && (
@@ -39,7 +31,6 @@ function Jokes() {
             onNoClick={handleNoClick}
             button="2"
             minHeight="20vh"
-            style={promptStyle}
           />
         )}
         {showPrompt && (
@@ -47,7 +38,6 @@ function Jokes() {
             question="Web ini bukan buat kamu atuh."
             button="0"
             minHeight="20vh"
-            style={promptStyle}
             onYesClick={handleYesClick}
             onNoClick={handleNoClick}
             />
