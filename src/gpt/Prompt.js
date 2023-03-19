@@ -52,13 +52,12 @@ const useStyles = makeStyles({
   },
 });
 
-function Prompt({ question, onYesClick, onNoClick,button }) {
+function Prompt({ question, onYesClick, onNoClick,button, className }) {
   const classes = useStyles();
   const justifyContent = button === "0"? "center" : "start" // Added ternary operator to set alignItems property
-  console.log(button, justifyContent)
 
   return (
-    <Card className={classes.card} elevation={5}>
+    <Card className={`${classes.card} ${className}`} elevation={5}>
       <CardContent className={classes.content} sx={{justifyContent: {justifyContent}}}> {/* Added className to CardContent */}
         <Typography variant="h4" component="h4" sx={{ fontWeight: 550 }} gutterBottom>
           {question}
