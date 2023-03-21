@@ -1,7 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import Prompt from './Prompt';
 import './Jokes.css'; // import the CSS file
 import { jokesOri } from './questions';
+import Login from './Login';
 
 var jokes = jokesOri
 for (let i = jokes.length - 1; i > 0; i--) {
@@ -35,12 +36,12 @@ function Jokes() {
     let newVal = showPrompt + 1
     setShowPrompt(newVal);
   };
-
   const containerStyle = {
     backgroundImage: 'linear-gradient(45deg, #FBF155, #FD8F40, #FF9F21)',
     backgroundPosition: '0% 50%',
     animation: 'GradientAnimation 10s ease infinite',
     minHeight: '100vh',
+    maxHeight: '100vh',
     display: 'flex',
     justifyContent: 'center',
     flexDirection: 'row',
@@ -49,7 +50,7 @@ function Jokes() {
   
   return (
     <div style={containerStyle}>
-      {showPrompt === 0 && (
+    {showPrompt === -1 && (
         <Prompt
           question="Apakah kamu odre?"
           answer = ""
@@ -59,6 +60,11 @@ function Jokes() {
           button="2"
           className="fade-in" // add the class to the component
         />
+      )}
+      {showPrompt === 0 && (
+        <Login 
+        onYesClick={handleYesClick}
+        onNoClick={handleNoClick}/>
       )}
       {showPrompt === 1 && (
         <Prompt

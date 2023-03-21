@@ -67,7 +67,7 @@ function Prompt({ question, onYesClick, onNoClick,button, className, showAnswer,
   const classes = useStyles();
   const justifyContent = button === "0"? "center" : "start" // Added ternary operator to set alignItems property
   const textAlign = (answer === "" || button === '-1' ) ? "center" : "left" 
-  const animation = button == -1 ? "fade-out" : "fade-in" // Added ternary operator to set animation property
+  const animation = button === -1 ? "fade-out" : "fade-in" // Added ternary operator to set animation property
   return (
 <Card className={`${classes.card} ${className}`} elevation={5} style={{backgroundColor: 'rgba(255, 255, 255, 0.85)', boxShadow: '0px 4px 20px rgba(0, 0, 0, 0.4)', borderRadius: '16px', backdropFilter: 'blur(5px)', border: '1px solid rgba(255,255,255,0.55)'}} >
       <CardContent className={classes.content} sx={{justifyContent: {justifyContent}}}> {/* Added className to CardContent */}
@@ -148,15 +148,15 @@ function Prompt({ question, onYesClick, onNoClick,button, className, showAnswer,
 
       {button === "-999" && (
         // image suruh pergi
-        <img src='suruh pergi.png' className={classes.image}></img>
+        <img src='suruh pergi.png' className={classes.image} alt="gambar anjing marah nyuruh pergi"></img>
         )}
       {button === "-99" && (
         // image suruh pergi
-        <img src='gooddog.jpg' className={classes.image}></img>
+        <img src='gooddog.jpg' className={classes.image} alt="gambar anjing bahagia sama jokes"></img>
         )}
        {button === "-100" && (
         // image suruh pergi
-        <img src='habis.png' className={classes.image}></img>
+        <img src='habis.png' className={classes.image} alt="gambar anjing sedih jokes udah habis"></img>
         )}
     </Card>
   );
