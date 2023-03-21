@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
+import { HashRouter as Router, Route, Routes } from "react-router-dom"
 import Navbar from './Navbar.js'
 import Biography from './Biography.js'
 import Jokes from './gpt/Jokes.js'
@@ -7,12 +7,12 @@ import Jokes from './gpt/Jokes.js'
 
 function App() {
   return (
-  <Router>
-    <Routes>
-      <Route path="/" element={<div><Navbar /> <Biography /></div>} />
-      <Route path="/odre" element={<Jokes />} />
-    </Routes>
-  </Router>
+    <Router>
+      <Routes>
+        <Route path="/" element={<div><Navbar /> <Biography /></div>} />
+        <Route path="/a-small-gift" element={<Jokes />} />
+      </Routes>
+    </Router>
   );
 }
 
