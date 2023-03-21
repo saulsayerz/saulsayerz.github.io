@@ -50,7 +50,7 @@ function Jokes() {
   
   return (
     <div style={containerStyle}>
-    {showPrompt === -1 && (
+    {showPrompt === -2 && (
         <Prompt
           question="Apakah kamu odre?"
           answer = ""

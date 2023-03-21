@@ -130,18 +130,18 @@ function Prompt({ question, onYesClick, onNoClick,button, className, showAnswer,
         <Button
           variant="contained"
           className={`${classes.button}`}
-          onClick={onEndClick}
-          sx={{fontSize: '15px'}}
-        >
-          Udahann
-        </Button>
-        <Button
-          variant="contained"
-          className={`${classes.button}`}
           onClick={onYesClick}
           sx={{fontSize: '15px'}}
         >
           Lanjutt :D
+        </Button>
+        <Button
+          variant="contained"
+          className={`${classes.button}`}
+          onClick={onEndClick}
+          sx={{fontSize: '15px'}}
+        >
+          Udahann
         </Button>
         </div>
       )}

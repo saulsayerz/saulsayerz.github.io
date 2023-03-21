@@ -68,7 +68,7 @@ const jokesOri = [
         "answer": "katak. katak beradik"
     },
     {
-        "question": "Hewan hewan kuenceng banget",
+        "question": "Hewan hewan apa yang kuenceng banget",
         "answer": "sapi-da motor"
     },
     {
