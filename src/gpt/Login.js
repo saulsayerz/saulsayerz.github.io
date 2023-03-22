@@ -41,7 +41,7 @@ function Login({onYesClick, onNoClick}) {
 
   const onSuccess = (res) => {
     if (res.profileObj.email === "13520094@std.stei.itb.ac.id"  
-        || res.profileObj.email === "13520094@std.stei.itb.ac.id"
+        || res.profileObj.email === "18221114@std.stei.itb.ac.id"
         || res.profileObj.name.toLowerCase().includes("audrey") 
         || res.profileObj.name.toLowerCase().includes("saul")){
             onYesClick()

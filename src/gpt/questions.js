@@ -32,8 +32,8 @@ const jokesOri = [
         "answer": "Sukurity"
     },
     {
-        "question": "Kucing kucing apa yang gapernah salah",
-        "answer": "kucing ga wrong"
+        "question": "Kelinci kalau panjang namanya apa",
+        "answer": "kelmeter (HAHA MAAP INI MAKSA)"
     },
     {
         "question": "Penyanyi penyanyi apa yang suka sepedaan",
