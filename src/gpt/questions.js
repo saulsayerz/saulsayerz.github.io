@@ -103,6 +103,10 @@ const jokesOri = [
         "question": "odre kalau jadi penyanyi nama panggungnya apa",
         "answer": "ariana grandre"
     },
+    {
+        "question": "odre odre apa yang mencuci baju",
+        "answer": "laundre"
+    },
 ]
 
 
