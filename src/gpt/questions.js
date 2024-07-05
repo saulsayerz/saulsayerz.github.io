@@ -1,11 +1,7 @@
 const jokesOri = [
     {
-        "question": "Jumat jumat apa yang odre menggoreng",
-        "answer": "Frydrei"
-    },
-    {
         "question": "Bebek bebek apa yang bisa berenang",
-        "answer": "semua bebek bisa berenang (atau bebek karet HAHA)"
+        "answer": "semua bebek bisa berenang HAHAHHA"
     },
     {
         "question": "Hewan hewan apa yang selalu telad",
@@ -88,24 +84,36 @@ const jokesOri = [
         "answer": "bolaemon"
     },
     {
-        "question": "kerja - kerja apa yang cocok sama odre",
-        "answer": "BA. Brand ambassadre"
+        "question": "Della kira kira kenapa terlambat",
+        "answer": "Karena lagi kena dellay"
     },
     {
-        "question": "lomba lomba apa yang ada odre nya",
-        "answer": "olimpiadre"
+        "question": "Apa namanya kalau della punya tujuh saudara",
+        "answer": "Namanya dellapan bersaudara"
     },
     {
-        "question": "jajan jajan apa yang dimakan odre",
-        "answer": "ondre - ondre"
+        "question": "Jajan jajan apa yang manis",
+        "answer": "Kacang Kedella"
     },
     {
-        "question": "odre kalau jadi penyanyi nama panggungnya apa",
-        "answer": "ariana grandre"
+        "question": "Della kalau menang lomba kira2 dapet apa",
+        "answer": "Dapat medella (medali MAAP JAUH WKKWK)"
     },
     {
-        "question": "odre odre apa yang mencuci baju",
-        "answer": "laundre"
+        "question": "Della kalau salah inget namanya apa",
+        "answer": "Mandella Effect WKWKW"
+    },
+    {
+        "question": "Kenapa gue begok?",
+        "answer": "TEORI SAUL: saul say 20x della ga begok"
+    },
+    {
+        "question": "Kenapa gue aneh?",
+        "answer": "TEORI SAUL: gapapa bagus kita sama2 aneh"
+    },
+    {
+        "question": "Kenapa ya gue mangkelin?",
+        "answer": "TEORI SAUL: karena suka unsend"
     },
 ]
 

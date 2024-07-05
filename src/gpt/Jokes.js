@@ -37,7 +37,7 @@ function Jokes() {
     setShowPrompt(newVal);
   };
   const containerStyle = {
-    backgroundImage: 'linear-gradient(45deg, #FBF155, #FD8F40, #FF9F21)',
+    backgroundImage: 'linear-gradient(45deg, #56CCF2, #2F80ED, #1C92D2)',
     backgroundPosition: '0% 50%',
     animation: 'GradientAnimation 10s ease infinite',
     minHeight: '100vh',
@@ -50,17 +50,6 @@ function Jokes() {
   
   return (
     <div style={containerStyle}>
-    {showPrompt === -2 && (
-        <Prompt
-          question="Apakah kamu odre?"
-          answer = ""
-          onYesClick={handleYesClick}
-          onNoClick={handleNoClick}
-          showAnswer = {true}
-          button="2"
-          className="fade-in" // add the class to the component
-        />
-      )}
       {showPrompt === 0 && (
         <Login 
         onYesClick={handleYesClick}
@@ -79,7 +68,7 @@ function Jokes() {
       )}
       {showPrompt === -1 && (
         <Prompt
-          question="Yeyy semoga semakin good mood :)"
+          question="Yey teori saul > ovt della :)"
           answer = ""
           button="-99"
           showAnswer = {true}
@@ -90,7 +79,7 @@ function Jokes() {
       )}
       {showPrompt === 3 + jokes.length && (
         <Prompt
-          question="Jokesnya udah habiisss :("
+          question="Teorinya udah habiisss :("
           answer = ""
           button="-100"
           showAnswer = {true}
@@ -101,8 +90,8 @@ function Jokes() {
       )}
       {showPrompt === 2 && (
         <Prompt
-          question="I heard you had a hard day"
-          answer = "So here i made you some jokes, hope it makes you feel better :D"
+          question="Web ini dibuka tiap kali della ovt aneh2"
+          answer = "Isinya adalah kumpulan teori saul dan lawakan untuk melawan ovt tsb"
           button="-1"
           showAnswer = {true}
           onYesClick={nextQuestionClick}

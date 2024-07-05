@@ -148,15 +148,15 @@ function Prompt({ question, onYesClick, onNoClick,button, className, showAnswer,
 
       {button === "-999" && (
         // image suruh pergi
-        <img src='suruh pergi.png' className={classes.image} alt="gambar anjing marah nyuruh pergi"></img>
+        <img src='suruh pergi.jpg' className={classes.image} alt="gambar Ciko marah nyuruh pergi"></img>
         )}
       {button === "-99" && (
         // image suruh pergi
-        <img src='gooddog.jpg' className={classes.image} alt="gambar anjing bahagia sama jokes"></img>
+        <img src='gooddog.jpg' className={classes.image} alt="gambar Ciko bahagia sama jokes"></img>
         )}
        {button === "-100" && (
         // image suruh pergi
-        <img src='habis.png' className={classes.image} alt="gambar anjing sedih jokes udah habis"></img>
+        <img src='habis.jpg' className={classes.image} alt="gambar Ciko sedih jokes udah habis"></img>
         )}
     </Card>
   );
